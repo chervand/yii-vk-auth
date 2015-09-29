@@ -1,0 +1,19 @@
+{
+  "name": "chervand/yii-vk-auth",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "chervand",
+      "email": "chervand@gmail.com"
+    }
+  ],
+  "require": {
+    "yiisoft/yii": "1.1.*",
+    "guzzlehttp/guzzle": "*"
+  },
+  "require-dev": {
+    "codeception/codeception": "*",
+    "codeception/specify": "*",
+    "codeception/yii-bridge": "dev-master"
+  }
+}
