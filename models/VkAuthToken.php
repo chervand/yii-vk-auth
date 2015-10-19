@@ -32,8 +32,9 @@ class VkAuthToken extends VkAuthActiveRecord
 	public function rules()
 	{
 		return [
-			['auth_ticket, ip, access_token, expires_in, user_id', 'required'],
-			['auth_ticket', 'vTicket']
+			['auth_ticket, access_token, expires_in, user_id', 'required'],
+			['auth_ticket', 'vTicket'],
+			['ip', 'default', 'value' => $this->retrieveClientIp()]
 		];
 	}
 
