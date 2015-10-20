@@ -15,7 +15,7 @@ class VkAuth extends CApplicationComponent
 	/**
 	 * @var string vk.com API version
 	 */
-	public $v = '5.21';
+	public $v = '5.37';
 
 	/**
 	 * @var string app ID
