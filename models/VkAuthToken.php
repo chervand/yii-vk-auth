@@ -33,8 +33,8 @@ class VkAuthToken extends VkAuthActiveRecord
 	{
 		return [
 			['auth_ticket, access_token, expires_in, user_id', 'required'],
+			['ip', 'default', 'value' => $this->retrieveClientIp()],
 			['auth_ticket', 'vTicket'],
-			['ip', 'default', 'value' => $this->retrieveClientIp()]
 		];
 	}
 
